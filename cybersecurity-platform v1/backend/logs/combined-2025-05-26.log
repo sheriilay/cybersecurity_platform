@@ -1,0 +1,40 @@
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T07:01:08.466Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T07:38:33.385Z"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","metadata":{},"timestamp":"2025-05-26T07:41:31.475Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T07:41:50.071Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T07:43:40.637Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T07:44:17.066Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T07:44:28.551Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T07:45:40.644Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T07:46:07.276Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T07:48:11.558Z"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","metadata":{},"timestamp":"2025-05-26T07:57:46.446Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T08:02:56.427Z"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","metadata":{},"timestamp":"2025-05-26T08:05:24.860Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T08:18:46.365Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T08:29:01.158Z"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","metadata":{},"timestamp":"2025-05-26T08:30:59.880Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T08:48:41.814Z"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","metadata":{},"timestamp":"2025-05-26T08:50:44.827Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T08:56:19.016Z"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","metadata":{},"timestamp":"2025-05-26T08:57:31.649Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T09:01:00.231Z"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","metadata":{},"timestamp":"2025-05-26T09:04:27.597Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T09:04:42.947Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T09:08:05.173Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T09:09:26.617Z"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","metadata":{},"timestamp":"2025-05-26T09:12:08.473Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T09:12:20.170Z"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","metadata":{},"timestamp":"2025-05-26T09:12:50.004Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T09:14:26.671Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T09:17:08.229Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T09:17:18.816Z"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","metadata":{},"timestamp":"2025-05-26T09:17:21.017Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T09:17:36.308Z"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","metadata":{},"timestamp":"2025-05-26T09:18:14.325Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T09:28:09.771Z"}
+{"level":"error","message":"Unhandled Rejection:","metadata":{"promise":{},"reason":{"code":"ERR_HTTP_HEADERS_SENT"}},"timestamp":"2025-05-26T09:29:24.212Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T09:34:21.396Z"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","metadata":{},"timestamp":"2025-05-26T09:35:23.711Z"}
+{"level":"info","message":"Server running in development mode on port 3000","metadata":{},"timestamp":"2025-05-26T09:35:39.787Z"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","metadata":{},"timestamp":"2025-05-26T09:36:47.373Z"}

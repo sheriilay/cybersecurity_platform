@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - secure-net
+
+  backend:
+    build: ./backend
+    ports:
+      - "3001:3001"
+    environment:
+      - JWT_SECRET=cybersec_platform_jwt_secret_key
+      - DB_URL=postgres://postgres:admin@postgres:5432/cybersecurity_platform
+    networks:
+      - secure-net
+    depends_on:
+      - postgres
+
+  waf:
+    image: cloudflare/waf
+    ports:
+      - "80:80"
+    networks:
+      - secure-net
+
+  postgres:
+    image: postgres:16
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=cybersecurity_platform
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=admin
+    networks:
+      - secure-net
+
+networks:
+  secure-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.88.0.0/24
+
+volumes:
+  pgdata:
