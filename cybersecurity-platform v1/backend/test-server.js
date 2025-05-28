@@ -5,7 +5,7 @@ const app = express();
 
 // CORS configuration
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'http://localhost:5000',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
@@ -56,7 +56,7 @@ app.post('/api/auth/register', (req, res) => {
 });
 
 // Start server
-const PORT = 3001;
+const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Test server is running on port ${PORT}`);
 }); 
