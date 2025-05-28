@@ -34,16 +34,16 @@ if (Test-PortInUse -port 3000) {
 }
 
 # Check and handle port 3001
-Write-Host "`nChecking port 3001..."
-if (Test-PortInUse -port 3001) {
+Write-Host "`nChecking port 5000..."
+if (Test-PortInUse -port 5000) {
     Write-Host "Port 3001 is in use."
-    if (Stop-ProcessOnPort -port 3001) {
+    if (Stop-ProcessOnPort -port 5000) {
         Write-Host "Successfully terminated process on port 3001"
     } else {
         Write-Host "Failed to terminate process on port 3001"
     }
 } else {
-    Write-Host "Port 3001 is free"
+    Write-Host "Port 5000 is free"
 }
 
 Write-Host "`nPort check complete." 
