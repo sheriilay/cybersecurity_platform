@@ -9,7 +9,7 @@ if (-not (Test-Path $envPath)) {
     Write-Host "Creating .env file..." -ForegroundColor Yellow
     @"
 # Server Configuration
-PORT=3001
+PORT=3000
 NODE_ENV=development
 
 # Database Configuration
@@ -29,7 +29,7 @@ JWT_ISSUER=cybersec_platform
 JWT_AUDIENCE=cybersec_platform
 
 # Frontend URL
-FRONTEND_URL=http://localhost:3000
+FRONTEND_URL=http://localhost:5000
 
 # Bcrypt Configuration
 BCRYPT_ROUNDS=10
@@ -61,6 +61,6 @@ $frontendPath = Join-Path $scriptPath "frontend"
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "Set-Location '$frontendPath'; npm start"
 
 Write-Host "`nServers started!" -ForegroundColor Green
-Write-Host "Frontend: http://localhost:3000" -ForegroundColor Cyan
-Write-Host "Backend: http://localhost:3001" -ForegroundColor Cyan
+Write-Host "Frontend: http://localhost:5000" -ForegroundColor Cyan
+Write-Host "Backend: http://localhost:3000" -ForegroundColor Cyan
 Write-Host "Login with username: admin, password: admin" -ForegroundColor Yellow 
