@@ -64,11 +64,11 @@ async function analyzeRouteFiles() {
           
           // Check if it's a valid router
           if (!router || typeof router !== 'function' || !router.use) {
-            console.error(`❌ ${file} does not export a valid Express router!`);
+            console.error(` ${file} does not export a valid Express router!`);
             console.error(`   Type: ${typeof router}`);
             console.error(`   Value:`, router);
           } else {
-            console.log(`✅ ${file} exports valid Express router`);
+            console.log(` ${file} exports valid Express router`);
             
             // Try to access internal stack (implementation detail, but helpful for diagnosis)
             if (router.stack) {
@@ -76,7 +76,7 @@ async function analyzeRouteFiles() {
             }
           }
         } catch (err) {
-          console.error(`❌ Error importing ${file}:`, err.message);
+          console.error(` Error importing ${file}:`, err.message);
         }
       }
     }
@@ -110,16 +110,16 @@ async function analyzeMiddlewareFiles() {
               const check = isValidMiddleware(value);
               
               if (check.valid) {
-                console.log(`✅ ${key} is valid middleware`);
+                console.log(` ${key} is valid middleware`);
               } else {
-                console.error(`❌ ${key} is NOT valid middleware: ${check.reason}`);
+                console.error(` ${key} is NOT valid middleware: ${check.reason}`);
                 if (check.value !== undefined) {
                   console.error(`   Value:`, check.value);
                 }
               }
             }
           } catch (err) {
-            console.error(`❌ Error importing ${file}:`, err.message);
+            console.error(` Error importing ${file}:`, err.message);
           }
         }
       }
@@ -157,14 +157,14 @@ async function analyzeAppSetup() {
       
       // Check for common issues
       if (handler.includes('{') || handler.includes('[')) {
-        console.error(`  ❌ WARNING: Handler looks suspicious - might be an object or array literal`);
+        console.error(`   WARNING: Handler looks suspicious - might be an object or array literal`);
       }
       
       // Check for potential typos in router import variables
       if (!indexContent.includes(`const ${handler} = require(`) && 
           !indexContent.includes(`let ${handler} = require(`) &&
           !indexContent.includes(`var ${handler} = require(`)) {
-        console.error(`  ❌ WARNING: Could not find a require statement for "${handler}"`);
+        console.error(`   WARNING: Could not find a require statement for "${handler}"`);
       }
     }
     
