@@ -212,7 +212,7 @@ The Cybersecurity Platform is designed to provide comprehensive protection for u
 #### Backend (.env)
 ```env
 # Server Configuration
-PORT=3001
+PORT=3000
 NODE_ENV=development
 
 # Database Configuration
@@ -239,21 +239,20 @@ ALERT_EMAIL=admin@example.com
 
 #### Frontend (.env)
 ```env
-REACT_APP_API_URL=http://localhost:3001
-REACT_APP_WS_URL=ws://localhost:3001
+REACT_APP_API_URL=http://localhost:5000
+REACT_APP_WS_URL=ws://localhost:5000
 REACT_APP_ENV=development
 ```
 
 ## Usage
 
 ### Access Points
-- Frontend Application: http://localhost:3000
-- Backend API: http://localhost:3001
-- API Documentation: http://localhost:3001/api-docs
+- Frontend Application: http://localhost:5000
+- Backend API: http://localhost:3000
+- API Documentation: http://localhost:3000/api-docs
 
 ### Default Credentials
 - Admin User: admin / admin
-- Test User: test / test123
 
 ### Getting Started
 1. Log in to the platform
