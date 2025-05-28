@@ -9,7 +9,7 @@ if not exist "%SCRIPT_DIR%backend\.env" (
     echo Creating .env file...
     (
         echo # Server Configuration
-        echo PORT=3001
+        echo PORT=3000
         echo NODE_ENV=development
         echo.
         echo # Database Configuration
@@ -27,7 +27,7 @@ if not exist "%SCRIPT_DIR%backend\.env" (
         echo JWT_REFRESH_EXPIRATION=7d
         echo.
         echo # Frontend URL
-        echo FRONTEND_URL=http://localhost:3000
+        echo FRONTEND_URL=http://localhost:5000
         echo.
         echo # Bcrypt Configuration
         echo BCRYPT_ROUNDS=10
@@ -58,6 +58,6 @@ start "Frontend Server" cmd /k "cd /d "%SCRIPT_DIR%frontend"; npm start"
 
 echo.
 echo Servers started!
-echo Frontend: http://localhost:3000
-echo Backend: http://localhost:3001
+echo Frontend: http://localhost:5000
+echo Backend: http://localhost:3000
 echo Login with username: admin, password: admin 
