@@ -4,7 +4,7 @@ services:
   frontend:
     build: ./frontend
     ports:
-      - "3000:3000"
+      - "5000:5000"
     environment:
       - NODE_ENV=production
     networks:
@@ -13,7 +13,7 @@ services:
   backend:
     build: ./backend
     ports:
-      - "3001:3001"
+      - "3000:3000"
     environment:
       - JWT_SECRET=cybersec_platform_jwt_secret_key
       - DB_URL=postgres://postgres:admin@postgres:5432/cybersecurity_platform
